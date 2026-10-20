@@ -1,94 +1,70 @@
-\# Day 9 — Full-Stack Task Manager Integration
+# Day 9 — Full-Stack Task Manager Integration
 
+## Objective
+Connect a React frontend to a FastAPI backend and PostgreSQL database to create a working full-stack Task Manager application.
 
+## Technologies Used
+- React
+- JavaScript
+- Python
+- FastAPI
+- PostgreSQL
+- REST API
+- Git and GitHub
 
-\## Objective
+## Features
+- Display all tasks
+- Add new tasks
+- Mark tasks as completed
+- Delete tasks
+- Store tasks in PostgreSQL
+- Communicate between frontend and backend using REST APIs
 
-Connect a React frontend to a FastAPI backend and store tasks in a PostgreSQL database.
+## Application Architecture
 
+React Frontend → FastAPI Backend → PostgreSQL Database
 
+The frontend sends HTTP requests to the backend. The backend processes requests and reads or updates task information in PostgreSQL.
 
-\## Technologies Used
+## How to Run the Application
 
-\- React
+### 1. Start the Backend
 
-\- JavaScript
+Open a PowerShell terminal and run:
 
-\- FastAPI
+```powershell
+cd "C:\Users\RUPASWATHI\OneDrive\Desktop\fullstack-learning\day06-fastapi-postgresql"
+.\.venv\Scripts\python.exe -m uvicorn src.main:app --reload
+```
 
-\- Python
+Keep this terminal running.
 
-\- PostgreSQL
+### 2. Start the Frontend
 
-\- REST API
+Open a second terminal and run:
 
-\- Git and GitHub
+```powershell
+cd "C:\Users\RUPASWATHI\OneDrive\Desktop\fullstack-learning\day08-react-task-manager"
+npm.cmd run dev
+```
 
+Open the local URL displayed by Vite, usually `http://localhost:5173/`.
 
+### 3. Test the Application
+1. Add a task.
+2. Mark the task as completed.
+3. Refresh the page and verify that the change persists.
+4. Delete a task and verify that it disappears.
 
-\## Project Overview
+## Related Repositories
+- Frontend: https://github.com/rupakola-1234/day08-react-task-manager
+- Backend: https://github.com/rupakola-1234/day06-fastapi-postgresql
 
-This project combines the React frontend from Day 8 with the FastAPI and PostgreSQL backend developed earlier.
+## Learning Outcomes
+- Integrated a React frontend with a FastAPI backend.
+- Used REST API requests to manage tasks.
+- Connected backend operations to PostgreSQL persistence.
+- Practised testing and version control with Git and GitHub.
 
-
-
-Users can manage their tasks through a web interface. The frontend sends HTTP requests to the backend, and the backend communicates with the database.
-
-
-
-\## Main Features
-
-\- Display tasks from the backend
-
-\- Add new tasks
-
-\- Mark tasks as completed
-
-\- Delete tasks
-
-\- Save task information in PostgreSQL
-
-\- Keep task information after refreshing the page
-
-\- Handle loading states and errors
-
-
-
-\## Application Flow
-
-React Frontend → FastAPI REST API → PostgreSQL Database
-
-
-
-\## How to Run
-
-1\. Start the FastAPI backend.
-
-2\. Start the React frontend in a separate terminal.
-
-3\. Open the frontend URL displayed by Vite in your browser.
-
-4\. Test adding, completing, and deleting tasks.
-
-
-
-\## Learning Outcomes
-
-\- Understand frontend and backend integration.
-
-\- Learn how React communicates with REST APIs.
-
-\- Practice CRUD operations.
-
-\- Understand database persistence.
-
-\- Test a full-stack application.
-
-
-
-\## GitHub Repositories
-
-\- Frontend: https://github.com/rupakola-1234/day08-react-task-manager
-
-\- Backend: https://github.com/rupakola-1234/day06-fastapi-postgresql
-
+## Project Status
+Day 9 integration documentation completed. The application should be run and tested with both the frontend and backend services running.
